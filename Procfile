@@ -1,1 +1,1 @@
-web: gunicorn job_post.wsgi
+web: gunicorn restful_api_job_post.wsgi
