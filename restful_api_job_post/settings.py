@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-xjgw4kqhe=#s&e%=kfvhn!ig5l)u9en*%blsu5!c0h#6j+84(@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'rest-api-postgresql.herokuapp.com/']
+ALLOWED_HOSTS = ['localhost', 'rest-api-postgresql.herokuapp.com', 'http://127.0.0.1:8000', '127.0.0.1']
 
 
 # Application definition
