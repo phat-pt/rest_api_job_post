@@ -1,1 +1,1 @@
-web: unicorn job_post.wsgi
+web: gunicorn job_post.wsgi
