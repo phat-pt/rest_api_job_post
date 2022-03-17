@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'restful_api_job_post.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'job_post_scraping',
+        'NAME': os.environ.get('PG_DATABASE'),
         'USER': os.environ.get('PG_USERNAME'),
         'PASSWORD': os.environ.get('PG_PASSWORD'),
         'HOST': os.environ.get('PG_HOST'),
