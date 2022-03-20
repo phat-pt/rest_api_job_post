@@ -18,9 +18,10 @@ class JobPost(models.Model):
     job_location = models.CharField(max_length=255, null=True, blank = True)
     job_description = models.TextField(null=True, blank = True)
     job_summary = models.TextField(null=True, blank = True)
-    job_time = models.DateField(null=True, blank= True)
+    job_time = models.CharField(max_length=255, null=True, blank= True)
     job_salary = models.CharField(max_length=255, null=True, blank = True)
     job_type = models.CharField(max_length=255, null=True, blank = True)
+    ingestion_time = models.DateTimeField(null=True, blank = True)
 
     def __str__(self):
         return self.job_title
