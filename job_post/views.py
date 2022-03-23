@@ -10,6 +10,6 @@ from .serializers import JobPostSerializer
 
 class JobPostViewSet(viewsets.ModelViewSet):
     today = datetime.today()
-    queryset = JobPost.objects.filter(ingestion_time__gte = datetime.now() - timedelta(days=1))
+    queryset = JobPost.objects.filter(ingestion_time__gte = datetime.now() - timedelta(hours=1))
     serializer_class = JobPostSerializer
     
