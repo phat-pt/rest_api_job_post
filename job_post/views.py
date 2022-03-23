@@ -12,4 +12,4 @@ class JobPostViewSet(viewsets.ModelViewSet):
     today = datetime.today()
     queryset = JobPost.objects.filter(ingestion_time__gte = datetime.now() - timedelta(days=1))
     serializer_class = JobPostSerializer
-     
+    
